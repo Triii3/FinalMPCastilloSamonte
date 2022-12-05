@@ -12,7 +12,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 /*
-        changeagraagafgit
+        Happy Birthday! Goodmorning!
+        Shawarawt kay Tri
+        Yo tara na valo
 */
     }
 }
