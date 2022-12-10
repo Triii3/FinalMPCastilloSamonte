@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">FinalMPCastilloSamonte</string>
+    <string name="scissors">Scissors</string>
+    <string name="paper">Paper</string>
+    <string name="rock">Rock</string>
+    <string name="you">You</string>
+    <string name="bot">Bot</string>
+    <string name="_0">0</string>
+    <string name="_0_2">0</string>
+    <string name="score">Score</string>
+    <string name="first_to_10_wins">first to 10 wins!</string>
 </resources>
