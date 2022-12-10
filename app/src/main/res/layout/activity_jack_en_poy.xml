@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,13 +10,11 @@
     android:layout_height="44dp"
     android:src="@drawable/img_press_to_home"
     android:layout_marginVertical="18dp"/>
-<Button android:id="@+id/btnPopOut"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+
     <TextView android:id="@+id/txtRules"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="first to 10 wins!"
+        android:text="@string/first_to_10_wins"
         android:textAllCaps="true"
         android:fontFamily="sans-serif-medium"
         android:textSize="20sp"
@@ -26,7 +23,7 @@
         />
     <LinearLayout android:id="@+id/lytScoreboard"
         android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/txtRules"
@@ -36,7 +33,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Score"
+            android:text="@string/score"
             android:textSize="20sp"
             android:fontFamily="sans-serif-black"
             android:textAlignment="center"
@@ -48,9 +45,11 @@
 
             >
             <TextView android:id="@+id/txtBotScore"
-                android:layout_width="65dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:maxHeight="85dp"
+                android:text="@string/_0_2"
                 android:textSize="64sp"
                 android:fontFamily="sans-serif-black"
                 android:textAlignment="center"
@@ -64,61 +63,75 @@
                 android:textAlignment="center"
                 />
             <TextView android:id="@+id/txtUserScore"
-                android:layout_width="65dp"
-                android:layout_height="wrap_content"
-                android:text="0"
+                android:layout_width="80dp"
+                android:layout_height="85dp"
+                android:layout_marginEnd="10dp"
+                android:maxHeight="85dp"
+                android:text="@string/_0"
                 android:textSize="64sp"
                 android:fontFamily="sans-serif-black"
                 android:textAlignment="center"
                 />
         </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
         <TextView
             android:layout_width="67dp"
             android:layout_height="wrap_content"
-            android:text="Bot"
+            android:text="@string/bot"
             android:textSize="16sp"
             android:fontFamily="sans-serif-medium"
             android:textAlignment="center"
-            android:layout_marginRight="30dp"
+            android:layout_marginLeft="15dp"
             />
         <TextView
             android:layout_width="67dp"
             android:layout_height="wrap_content"
-            android:text="You"
+            android:text="@string/you"
             android:textSize="16sp"
             android:fontFamily="sans-serif-medium"
             android:textAlignment="center"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="80dp"
             />
 
         </LinearLayout>
     </LinearLayout>
+
+    <TextView   android:id="@+id/txtWinOrLose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:layout_below="@id/lytScoreboard"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20sp"
+        />
 
     <LinearLayout
         android:id="@+id/lytPicks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/imgBotPick"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:src="@drawable/img_bot"
 
             />
 
         <ImageView
+            android:id="@+id/imgUserPick"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:src="@drawable/img_user" />
     </LinearLayout>
 
@@ -136,7 +149,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rock"
+                android:text="@string/rock"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="14sp"
                 android:textAlignment="center"/>
@@ -153,7 +166,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Paper"
+            android:text="@string/paper"
             android:fontFamily="sans-serif-medium"
             android:textSize="14sp"
             android:textAlignment="center"/>
@@ -163,6 +176,7 @@
             android:src="@drawable/paper"
             android:layout_marginHorizontal="10dp"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -170,7 +184,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Scissors"
+            android:text="@string/scissors"
             android:fontFamily="sans-serif-medium"
             android:textSize="14sp"
             android:textAlignment="center"/>
