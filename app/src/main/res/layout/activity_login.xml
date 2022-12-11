@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/mobile_bg">
+    <ImageView  android:id="@+id/imgGMiniLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/g_mini_logo"
+        android:layout_centerHorizontal="true"/>
+    <ImageView  android:id="@+id/imgFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_of_friends"
+        android:layout_below="@id/imgGMiniLogo"
+        android:layout_centerHorizontal="true"/>
+    <TextView   android:id="@+id/txtviewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/imgFriends"
+        android:layout_centerHorizontal="true"/>
+    <EditText   android:id="@+id/editUsername"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtviewUsername"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+    <Button android:id="@+id/btnUsername"
+        android:layout_width="183dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editUsername"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:background="#BABABA"/>
+
+</RelativeLayout>
