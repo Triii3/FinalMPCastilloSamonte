@@ -113,6 +113,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/betNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/betID"
@@ -134,6 +135,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/guessNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/betID"
@@ -142,6 +144,7 @@
             </EditText>
 
             <Button
+                android:id="@+id/placeBet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
@@ -151,10 +154,7 @@
                 android:textColor="#156286"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/guessID">
-
             </Button>
-
         </RelativeLayout>
     </LinearLayout>
-
 </RelativeLayout>
