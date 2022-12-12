@@ -28,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        imgMemory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent guessAct = new Intent(getApplicationContext(), Guessing.class);
+                startActivity(guessAct);
+            }
+        });
+
 
 /*
         Happy Birthday! Goodmorning!
