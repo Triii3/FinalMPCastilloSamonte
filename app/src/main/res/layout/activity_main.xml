@@ -5,11 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="#C4E7F5">
 
     <LinearLayout
-        android:layout_width="254dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerHorizontal="true"
@@ -17,6 +15,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Good day, "
+                android:textAlignment="textEnd"
+                android:textSize="20sp" />
             <TextView
                 android:id="@+id/txtUsername"
                 android:layout_width="wrap_content"
@@ -25,24 +31,25 @@
                 android:text="[Username]"
                 android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:text=", Welcome to..."
-                android:textSize="20sp" />
-        </LinearLayout>
 
-        <TextView
-            android:id="@+id/txtTitle"
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:text="Text Title"
-            android:textAllCaps="true"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            android:textAlignment="center"/>
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/g_mini_logo"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mini"/>
+        </LinearLayout>
+
+
+
     </LinearLayout>
 
     <LinearLayout
