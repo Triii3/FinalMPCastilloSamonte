@@ -16,13 +16,13 @@
         android:layout_height="wrap_content"
         android:text="@string/first_to_10_wins"
         android:textAllCaps="true"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/myfont1"
         android:textSize="20sp"
         android:layout_marginTop="93dp"
         android:textAlignment="center"
         />
     <LinearLayout android:id="@+id/lytScoreboard"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:text="@string/score"
             android:textSize="20sp"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="@font/myfont1"
             android:textAlignment="center"
             />
         <LinearLayout

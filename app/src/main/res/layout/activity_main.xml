@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-
+    tools:context=".MainActivity"
+    android:background="@drawable/mobile_bg"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerHorizontal="true"
-        android:layout_marginVertical="141dp">
+        android:layout_marginVertical="100dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -19,18 +20,19 @@
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="@font/myfont1"
                 android:text="Good day, "
                 android:textAlignment="textEnd"
+                android:textColor="#0c2143"
                 android:textSize="20sp" />
             <TextView
                 android:id="@+id/txtUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="@font/myfont1"
+                android:textColor="#0c2143"
                 android:text="[Username]"
                 android:textSize="20sp" />
-
 
         </LinearLayout>
         <LinearLayout
@@ -71,7 +73,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="@font/myfont1"
             android:text="Jack En Poy"
             android:textAlignment="center"
             android:textSize="20sp" />
@@ -87,15 +89,15 @@
         android:layout_centerHorizontal="true">
 
         <ImageView android:id="@+id/imgMemory"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:src="@drawable/memory_png" />
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/guessgame" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
-            android:text="Memory"
+            android:fontFamily="@font/myfont1"
+            android:text="Guessing Game"
             android:textAlignment="center"
             android:textSize="20sp" />
 

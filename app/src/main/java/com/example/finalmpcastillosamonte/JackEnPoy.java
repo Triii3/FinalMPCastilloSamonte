@@ -168,11 +168,16 @@ public class JackEnPoy extends AppCompatActivity {
         }
 
         if (userscore==10){
-
+            imgPaper.setClickable(false);
+            imgRock.setClickable(false);
+            imgScissors.setClickable(false);
             createPopupDialog();
 
         }
         else if (botscore==10){
+            imgPaper.setClickable(false);
+            imgRock.setClickable(false);
+            imgScissors.setClickable(false);
             createPopupDialog();
 
         }
@@ -186,7 +191,6 @@ public class JackEnPoy extends AppCompatActivity {
         Button btnExit = popupView.findViewById(R.id.btnExit);
 
         TextView txtMatchStatus = popupView.findViewById(R.id.txtMatchStatus);
-
 
         dialogBuilder.setView(popupView);
         AlertDialog dialog = dialogBuilder.create();
@@ -207,6 +211,9 @@ public class JackEnPoy extends AppCompatActivity {
         btnRetry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                imgPaper.setClickable(true);
+                imgRock.setClickable(true);
+                imgScissors.setClickable(true);
                 botscore = 0;
                 userscore = 0;
                 txtBotScore.setText(String.valueOf(botscore));
