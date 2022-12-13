@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerHorizontal="true"
-        android:layout_marginVertical="141dp">
+        android:layout_marginVertical="100dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -73,7 +73,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="@font/myfont1"
             android:text="Jack En Poy"
             android:textAlignment="center"
             android:textSize="20sp" />
@@ -89,15 +89,15 @@
         android:layout_centerHorizontal="true">
 
         <ImageView android:id="@+id/imgMemory"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:src="@drawable/memory_png" />
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/guessgame" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
-            android:text="Memory"
+            android:fontFamily="@font/myfont1"
+            android:text="Guessing Game"
             android:textAlignment="center"
             android:textSize="20sp" />
 
